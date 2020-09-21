@@ -1,0 +1,104 @@
+2020-09-20 22:11:35,259 INFO: Microblog startup [in /mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/__init__.py:74]
+2020-09-20 22:14:43,698 INFO: Microblog startup [in /mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/__init__.py:73]
+2020-09-20 22:15:17,067 ERROR: Exception on / [GET] [in /mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 2242, in preprocess_request
+    rv = func()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/main/routes.py", line 18, in before_request
+    g.locale = str(get_locale())
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 226, in get_locale
+    rv = babel.locale_selector_func()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/__init__.py", line 78, in get_locale
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+NameError: name 'app' is not defined
+2020-09-20 22:15:21,061 ERROR: Exception on / [GET] [in /mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 2242, in preprocess_request
+    rv = func()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/main/routes.py", line 18, in before_request
+    g.locale = str(get_locale())
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask_babel/__init__.py", line 226, in get_locale
+    rv = babel.locale_selector_func()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/__init__.py", line 78, in get_locale
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+NameError: name 'app' is not defined
+2020-09-20 22:16:01,365 INFO: Microblog startup [in /mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/__init__.py:73]
+2020-09-20 22:16:05,168 ERROR: Exception on / [GET] [in /mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/main/routes.py", line 37, in index
+    page, app.config['POSTS_PER_PAGE'], False)
+NameError: name 'app' is not defined
+2020-09-20 22:19:34,462 INFO: Microblog startup [in /mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/__init__.py:73]
+2020-09-20 22:19:38,663 ERROR: Exception on / [GET] [in /mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/main/routes.py", line 37, in index
+    page, app.config['POSTS_PER_PAGE'], False)
+NameError: name 'app' is not defined
+2020-09-20 22:21:36,039 INFO: Microblog startup [in /mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/__init__.py:73]
+2020-09-20 22:21:43,289 ERROR: Exception on /explore [GET] [in /mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/gylim/Desktop/Fridge/Projects/Python/flask_tutorial/app/main/routes.py", line 53, in explore
+    next_url = url_for('main.explore', page=post.next_num)\
+NameError: name 'post' is not defined

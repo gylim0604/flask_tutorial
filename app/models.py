@@ -3,7 +3,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from app import db ,login
 from flask_login import UserMixin
 from hashlib import md5
-
+from time import time
+import jwt
+from flask import current_app
 
 followers = db.Table('followers',
     db.Column('follower_id', db.Integer, db.ForeignKey('user.id')),

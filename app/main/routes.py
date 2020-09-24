@@ -29,9 +29,7 @@ def index():
         if language == 'UNKNOWN' or len(language) > 5:
             language = ''
         post = Post(body=form.post.data, author=current_user,language = language)
-        db.session.add(post)
-        db.session.commit()
-        flash('Your post is now live!')
+ 
         return redirect(url_for('main.index'))
 
     page = request.args.get('page', 1, type=int)
@@ -73,6 +71,14 @@ def user(username):
     form = EmptyForm()
     return render_template('user.html', user=user, posts=posts.items,
                            next_url=next_url, prev_url=prev_url, form=form)
+
+
+@bp.route('/user/<username>/popup')
+@login_required
+def user_popup(username):
+    user = User.query.filter_by(username=username).first_or_404()
+    form = EmptyForm()
+    return render_template('user_popup.html', user=user, form=form)
 
 @bp.route('/edit_profile', methods=['GET','POST'])
 @login_required
